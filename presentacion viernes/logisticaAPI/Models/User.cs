@@ -9,7 +9,7 @@ public class User
     public bool IsActive { get; set; }
 
     public int RoleId { get; set; }
-    public Role Role { get; set; }
+    public virtual Role Role { get; set; } = null!;
 
     public List<Order> Orders { get; set; }
 }
